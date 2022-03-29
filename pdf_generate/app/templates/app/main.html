@@ -1,0 +1,13 @@
+{%block title%}
+customers<br><hr>
+{%endblock%}
+
+{%block content%}
+{%for customer in object_list%}
+{{customer}}
+
+<a href="{% url 'customers' customer.pk %}"><button class="btn btn-danger">pdf</button></a>
+<br>
+<hr>
+{%endfor%}
+{%endblock content%}

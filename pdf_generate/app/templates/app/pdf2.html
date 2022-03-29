@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        {{customer}}
+        <br>
+        {{customer.description|linebreaks}}
+        <br>
+        {{customer.logo}}
+        <br>
+        {{customer.logo.url}}
+        <br>
+        {{customer.logo.path}}
+        <br>
+        <img src="{{customer.logo.path}}" height="200px">
+        <img src="media/{{customer.logo}}",height='200px'>
+    </body>
+</html>
